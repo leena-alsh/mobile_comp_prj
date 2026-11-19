@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF8FC">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_management_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Add Product Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addProductCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="#F0EAF9"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="3dp"
+        app:contentPadding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Clickable Dropdown Header -->
+            <LinearLayout
+                android:id="@+id/addProductHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add New Product"
+                    android:textColor="#49336F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/addProductArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textColor="#49336F"
+                    android:textSize="20sp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- Collapsible Form -->
+            <LinearLayout
+                android:id="@+id/addProductForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/productNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/product_name_hint"
+                    android:inputType="textCapSentences"
+                    android:importantForAutofill="no"
+                    android:textColor="#212121"
+                    android:textColorHint="#777777"
+                    android:padding="12dp"
+                    android:background="@drawable/prod_input_bg"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/productDescriptionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="64dp"
+                    android:hint="@string/product_description_hint"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minLines="2"
+                    android:importantForAutofill="no"
+                    android:textColor="#212121"
+                    android:textColorHint="#777777"
+                    android:padding="12dp"
+                    android:background="@drawable/prod_input_bg"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/productCategoryInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/product_category_hint"
+                    android:inputType="textCapSentences"
+                    android:importantForAutofill="no"
+                    android:textColor="#212121"
+                    android:textColorHint="#777777"
+                    android:padding="12dp"
+                    android:background="@drawable/prod_input_bg"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/productPriceInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/product_price_hint"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:textColor="#212121"
+                    android:textColorHint="#777777"
+                    android:padding="12dp"
+                    android:background="@drawable/prod_input_bg"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/addProductButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/add_product" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Product Search -->
+    <EditText
+        android:id="@+id/productSearchInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="52dp"
+        android:hint="@string/search_products_hint"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:textColor="#212121"
+        android:textColorHint="#777777"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/prod_input_bg"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/addProductCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Show All Products Button -->
+    <Button
+        android:id="@+id/showAllProductsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/show_all_products"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/productSearchInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/managementProductList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintTop_toBottomOf="@id/showAllProductsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

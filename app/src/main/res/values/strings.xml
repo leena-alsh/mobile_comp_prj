@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Bits &amp; Bobs</string>
+
+    <!-- welcome screen -->
+    <string name="app_title">BITS &amp; BOBS</string>
+    <string name="welcome_description">A little bit of everything.</string>
+    <string name="tagline">Find your next favourite.</string>
+    <string name="create_account_button">CREATE ACCOUNT</string>
+    <string name="footer_text">A LITTLE RANDOM. A LOT OF STYLE.</string>
+
+    <!-- for login -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Login to continue shopping.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">Don\'t have an account? Create one!</string>
+
+
+    <!--  create acc -->
+    <string name="create_account_title">Create Account</string>
+    <string name="create_account_subtitle">Join Bits &amp; Bobs and start shopping.</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account? Login</string>
+
+
+    <!-- registration msgs -->
+    <string name="registration_empty_fields">Please fill in all fields.</string>
+    <string name="invalid_email">Please enter a valid email address.</string>
+    <string name="password_too_short">Password must be at least 8 characters.</string>
+    <string name="passwords_do_not_match">Passwords do not match.</string>
+    <string name="account_created">Account created successfully!</string>
+    <string name="email_already_registered">This email is already registered.</string>
+    <string name="registration_failed">Registration failed. Please try again.</string>
+
+    <!-- login activity -->
+    <string name="login_empty_fields">Please enter your email and password.</string>
+    <string name="login_success">Login successful! Welcome back.</string>
+    <string name="login_invalid_credentials">Incorrect email or password.</string>
+
+
+    <!-- home screen -->
+    <string name="home_title">BITS &amp; BOBS</string>
+    <string name="home_welcome">Welcome to your little corner of everything.</string>
+    <string name="search_hint">Search for something .  .  .</string>
+    <string name="products_title">Explore our collection</string>
+    <string name="products_placeholder">Your products will appear here!</string>
+    <string name="logout">LOG OUT</string>
+
+
+    <!-- categories -->
+    <string name="category_bags">BAGS</string>
+    <string name="category_dresses">DRESSES</string>
+    <string name="category_accessories">ACCESSORIES</string>
+
+    <!-- bags -->
+    <string name="product_mini_bag">Mini Shoulder Bag</string>
+    <string name="desc_mini_bag">A stylish everyday shoulder bag</string>
+    <string name="price_mini_bag">SAR 89.00</string>
+
+    <string name="product_tote_bag">Classic Tote Bag</string>
+    <string name="desc_tote_bag">A simple and versatile tote bag</string>
+    <string name="price_tote_bag">SAR 65.00</string>
+
+    <!-- dresses -->
+    <string name="product_floral_dress">Floral Summer Dress</string>
+    <string name="desc_floral_dress">A light and elegant floral dress</string>
+    <string name="price_floral_dress">SAR 120.00</string>
+
+    <string name="product_midi_dress">Casual Midi Dress</string>
+    <string name="desc_midi_dress">A comfortable everyday midi dress</string>
+    <string name="price_midi_dress">SAR 105.00</string>
+
+    <!-- accessories -->
+    <string name="product_necklace">Gold Keychain</string>
+    <string name="desc_necklace">A cute keychain to accessorize your everyday essentials</string>
+    <string name="price_necklace">SAR 35.00</string>
+
+    <string name="product_sunglasses">Classic Sunglasses</string>
+    <string name="desc_sunglasses">Minimal sunglasses for any outfit</string>
+    <string name="price_sunglasses">SAR 55.00</string>
+
+<!-- prod management -->
+    <string name="product_management_title">Product Management</string>
+    <string name="product_name_hint">Product name</string>
+    <string name="product_description_hint">Product description</string>
+    <string name="product_category_hint">Category (Bags, Dresses, Accessories)</string>
+    <string name="product_price_hint">Price</string>
+    <string name="add_product">Add Product</string>
+    <string name="search_products_hint">Search products</string>
+    <string name="show_all_products">Show All Products</string>
+
+    <string name="delete_product">Delete</string>
+
+    <string name="product_added">Product added successfully!</string>
+    <string name="product_add_failed">Could not add product. It may already exist.</string>
+
+    <string name="explore_collection">Explore Our Collection</string>
+    <string name="manage_products">Manage Products</string>
+
+</resources>
