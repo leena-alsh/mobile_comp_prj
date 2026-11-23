@@ -1,14 +1,14 @@
 This project is for the course 475 | mobile computing
-
+<br><br>
 Done by students from Prince Musaid bin Abdulrahman University:
+<br><br>
+Leena AlSharif 
 
-Leena AlSharif | s230052197
+Sara AlSadun 
 
-Sara AlSadun | s230006648
+Wasan AlMutairi 
 
-Wasan AlMutairi | s230049752
+Wasmiah AlMuwash 
 
-Wasmiah AlMuwash | s230043662
-
-
-This project was made using Andriod Studios
+<br><br>
+Bits & Bobs is an Android application developed to provide users with a simple way to browse and manage a product catalogue. The application allows users to create an account, log in, view available products, search for specific items, and manage the product information stored in the application.
